@@ -1,0 +1,66 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Poor+Story&display=swap');
+
+/* 전역 스타일 설정 */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard', 'Noto Sans KR', 'Poor Story', system-ui, sans-serif;
+}
+
+:root {
+  --primary-color: #00A664;
+  --secondary-color: #54d892;
+  --font-family: 'Poor Story', system-ui;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 유틸리티 클래스 */
+.hidden {
+  display: none !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.cbtiRatios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  .cbtiRatioItem {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 18px;
+      color: #333333;
+    }
+  }
+}
+
+/* 스크롤바 스타일 설정 */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsla(138, 49%, 75%, 0.772);
+}
